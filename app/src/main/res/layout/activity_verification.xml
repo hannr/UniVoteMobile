@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ch.bfh.univote.election.activities.VerificationActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/verificationBottom" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/confirmation"
+            android:id="@+id/vTextView"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#000000" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/vote_has_been_sent"
+            android:id="@+id/vTextView5"
+            android:textColor="@android:color/black" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/submitted_ballot"
+            android:id="@+id/vTextView7"
+            android:textColor="@android:color/black" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#000000" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verificationListView"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="4dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/verificationBottom" >
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#000000" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_verification"
+            android:textAllCaps="false"
+            android:id="@+id/showVerificationButton"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/finish"
+            android:textAllCaps="false"
+            android:id="@+id/verificationFinishButton"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape" />
+
+    </LinearLayout>
+
+</RelativeLayout>

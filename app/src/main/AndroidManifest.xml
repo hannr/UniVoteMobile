@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.bfh.univote.election" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/univotelogov2"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name=".activities.ElectionOverviewActivity"
+            android:label="UniVote"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".activities.BallotActivity"
+            android:label="Stimmzettel" >
+        </activity>
+        <activity
+            android:name=".activities.OptionSelectionActivity"
+            android:label="Listen"
+            android:noHistory="true"
+            android:parentActivityName=".activities.BallotActivity" >
+
+            <!-- define BallotActivity as Parent Activity for Up Navigation -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.BallotActivity" />
+        </activity>
+        <activity
+            android:name=".activities.VerificationActivity"
+            android:label="Verifizierung" >
+        </activity>
+        <activity
+            android:name=".activities.PasswordActivity"
+            android:label="Passwort Eingabe"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".activities.VerificationTabActivity"
+            android:label="Verifizierung"
+            android:parentActivityName=".activities.VerificationActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.VerificationActivity" />
+        </activity>
+        <activity
+            android:name="ch.bfh.univote.registration.RegistrationActivity"
+            android:label=""
+            android:noHistory="true"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="ch.bfh.univote.registration.RegistrationCompleteActivity"
+            android:label=""
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="ch.bfh.univote.registration.WebViewActivity"
+            android:label=""
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="unicert" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ch.bfh.univote.registration.StartRegistrationActivity"
+            android:label="@string/title_activity_start"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".activities.EntryActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

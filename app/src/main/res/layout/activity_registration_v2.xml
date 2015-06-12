@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ch.bfh.univote.registration.activity_registration_v2">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Wahlschlüsselgenerierung"
+                android:id="@+id/textView13"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#000000" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Schritt 1: Erzeugung des persönlichen Wahlschlüssels"
+                android:id="@+id/textView15"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Schlüssel erzeugen"
+                android:id="@+id/button_generate_key"
+                android:textAllCaps="false"
+                android:onClick="onClick"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Ihr persönlicher Wahlschlüssel"
+                android:id="@+id/textView16"
+                android:textColor="@android:color/black" />
+
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:id="@+id/text_view_private_key"
+                android:textColor="@android:color/black"
+                android:background="@android:color/darker_gray" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Schritt 2: Wahlschlüssel mit Passwort schützen"
+                android:id="@+id/textView17"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Passwort eingeben"
+                android:id="@+id/textView18"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/edit_text_password1" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Passwort erneut eingeben"
+                android:id="@+id/textView19"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/edit_text_password2" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Schritt 3: Optionen auswählen"
+                android:id="@+id/textView20"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Identitätsfunktion"
+                android:id="@+id/textView21"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:id="@+id/spinner_identity_function"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:paddingTop="3dp"
+                android:entries="@array/identity_function"
+                android:prompt="@string/choose_identity_function"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:visibility="visible" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Schritt 4: Passwortgeschützter Wahlschlüssel auf Gerät ablegen"
+                android:id="@+id/textView22"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20px" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Schlüssel ablegen"
+                android:id="@+id/button_save_key_on_device"
+                android:textAllCaps="false"
+                android:onClick="onClick"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/buttonshape" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">UniVote</string>
+    <string name="univote">UniVote</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_parent">ParentActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_ballot">Ballot</string>
+    <string name="title_activity_verification">VerificationActivity</string>
+    <string name="title_activity_candidate_detail">CandidateDetailActivity</string>
+    <string name="title_activity_password">PasswordActivity</string>
+    <string name="title_activity_verification_detail">VerificationDetailActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_verification_tab">VerificationTabActivity</string>
+
+
+    <string name="blank"></string>
+
+    <string name="idea">Idea</string>
+    <string name="idea_content">
+        UniVote is an Internet voting system for elections at
+        Swiss universities. It is the result of ongoing research
+        activities at the Bern University of Applied Sciences.
+        The source code and a detailed description of the system
+        is available on the project web page.
+    </string>
+    <string name="registration">Enter registration</string>
+    <string name="registration_content">
+        To register, you will need your ordinary SWITCHaai credentials.
+        UniVote uses them to verify your affiliation to a Swiss university.
+    </string>
+    <string name="vote">Vote Casting</string>
+    <string name="vote_content">
+        To cast a vote, you will need your personal voting key
+        from the registration process. The key has been stored
+        on your mobile device. The voting key allows
+        UniVote to verify your eligibility without knowing your identity.
+    </string>
+
+    <string name="all_fields_required">All fields required.</string>
+    <string name="passwords_not_the_same">Passwords are not identical.</string>
+    <string name="password_too_short">Password too short. Minimum character length:</string>
+    <string name="generate_key_title">1 Generate personal private key</string>
+    <string name="generate_key">Generate key</string>
+    <string name="key">Your personal private key</string>
+    <string name="protect_key_title">2 Protect private key with password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="re_enter_password">Re-Enter password</string>
+    <string name="options">3 Options</string>
+    <string name="choose_identity_function">Identity processing function</string>
+    <string-array name="identity_function">
+        <item>Standard function for SwitchAAI</item> <!-- Id 1 (for server) Standard function for SwitchAAI -->
+        <item>Anonymized function for SwitchAAI</item> <!-- Id 2 (for server) Anonymized function for SwitchAAI -->
+        <item>Zurich function for SwitchAAI</item> <!-- Id 3 (for server) Zurich function for SwitchAAI -->
+    </string-array>
+    <string name="save_key_on_device_title">4 Save password-protected private key to device</string>
+    <string name="save_key_on_device">Save key</string>
+
+    <string name="registration_complete">
+        Your personal voting key was successfully generated and certified by UniVote.
+        Your password-protected voting key has been saved to your mobile device.
+        You will use this key for upcoming elections. The certificate of your voting key is stored by UniVote.
+    </string>
+    <string name="go_home">Back to home</string>
+
+    <string name="clear_ballot">Clear ballot</string>
+    <string name="to_lists">Lists</string>
+    <string name="send">Send</string>
+    <string name="Ballot">Ballot</string>
+    <string name="password_input_required">Password input required</string>
+    <string name="personal_voting_key_imported_enter_password">Your personal voting key has been imported by the device. Please enter your password for voting key encryption.</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="password_not_correct">Password not correct.</string>
+    <string name="enter_password_again">Please enter password again.</string>
+    <string name="ok">Ok</string>
+    <string name="next">Next</string>
+    <string name="registration_complete_title">Registration complete</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="vote_has_been_sent">Your vote has been sent</string>
+    <string name="submitted_ballot">Bellow you can see your submitted ballot</string>
+    <string name="show_verification">Show verification</string>
+    <string name="finish">Finish</string>
+    <string name="current_elections">Current elections</string>
+    <string name="welcome_to_univote">Welcome to UniVote</string>
+
+    <string name="add_list">Add list</string>
+    <string name="question_only_list_or_including_candidates">Would you also like to add the candidates or only the list</string>
+    <string name="only_list">Only the list</string>
+    <string name="including_candidates">Also candidates</string>
+
+    <string name="title_activity_activity_registration_v2">activity_registration_v2</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_entry">EntryActivity</string>
+    <string name="title_activity_registration_complete">RegistrationCompleteActivity</string>
+    <string name="title_activity_extended_aes_encryptor_test">ExtendedAesEncryptorTestActivity
+    </string>
+
+</resources>

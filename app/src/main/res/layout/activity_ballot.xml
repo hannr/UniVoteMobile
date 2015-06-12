@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ch.bfh.univote.election.activities.BallotActivity">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ballotBottom" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Ballot"
+            android:id="@+id/textView9"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#000000" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clear_ballot"
+                    android:id="@+id/deleteBallotContentButton"
+                    android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/buttonshape" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+        </LinearLayout>
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#000000" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ballotListView"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ballotBottom">
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#000000" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/to_lists"
+            android:id="@+id/button8"
+            android:textAllCaps="false"
+            android:onClick="onClick"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:textAllCaps="false"
+            android:id="@+id/sendBallotButton"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/buttonshape" />
+
+    </LinearLayout>
+
+</RelativeLayout>

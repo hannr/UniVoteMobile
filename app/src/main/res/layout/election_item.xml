@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="20px"
+        android:layout_height="10px" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/electionButton"
+        android:enabled="true"
+        android:nestedScrollingEnabled="true"
+        android:clickable="true"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"/>
+    <Space
+        android:layout_width="20px"
+        android:layout_height="10px" />
+
+</LinearLayout>
